@@ -2,7 +2,7 @@
 
 <x-layouts::app>
     <div class="main">
-        <img src='kasumi_thankyou_qrcode.jpeg' style="width:300px;height:300px;" />
+        <img src='kasumi_thankyou_qrcode.jpeg' />
         <span class="caption">scan the QR code to donate</span>
     </div>
 </x-layouts::app>
@@ -23,5 +23,15 @@
 
     .display {
         font-size: 48px;
+    }
+
+    img {
+        width: 30%;
+    }
+
+    @media screen and (max-width:1000px) {
+        img {
+            max-width: 300px;
+        }
     }
 </style>
